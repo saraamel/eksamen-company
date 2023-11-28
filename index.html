@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Kanit:wght@300&family=Nunito:wght@200&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+        <title>Company name</title>
+    </head>
+    <body>
+        <div class="grid-container">
+        <header>
+            <nav>
+                <a href="index.html" id="logo"><img src="img/ressurser/logo1.png" alt="logobilde på menyen"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <button class="javanav" type="button" onclick="navigateToContact()">Contact</button>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="headline">
+            <h1>Compeling headline</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <span>
+                    <a href="#services">Read more about our services</a>
+                </span>
+            </section>
+            <section class="engaging">
+                <h2>Engaging subheading. What can you help your visitors with</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
+            <div id="about-company">
+                <img src="https://placehold.co/400" alt="Bilde tilhørende about our company">
+                <section>
+                    <h2>About our company</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="about.html" class="read-more-about-us">Read more about us</a>
+                </section>
+            </div>
+            <h2 id="serviceH2">Our services</h2>
+            <div id="services">
+                <section>
+                    <h3>Branding</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </section>
+                <section>
+                    <h3>Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </section>
+                <section>
+                    <h3>Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </section>
+                <section>
+                    <h3>Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <section class="sign-up">
+                <h3>Sign up for our newsletter</h3>
+                <form>
+                    <label for="email-signup"></label>
+                    <input type="text" id="email-signup">
+                    <input type="submit" value="Sign me up" style="background-color: #e6bd43; border-color: #e6bd43; font-weight: bold;">
+                </form>
+            </section>
+            <section class="some">
+                <a href="index.html"><img src="img/ressurser/logo1.png" alt="logobilde på footermeny"></a>
+                <p>Company copyright 2023</p>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </section>
+        </footer>
+    </div>
+        <script>
+            function navigateToContact() {
+      window.location.href = 'about.html#Contact';
+    }
+        </script>
+    </body>
+
