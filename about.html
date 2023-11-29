@@ -29,12 +29,15 @@
             </nav>
         </header>
         <main>
-            <div id="company">
-            <img src="#" alt="Bilde for bakgrunn av about us seksjon">
-            <p>Company name</p>
-            <h2>About our company</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="Intouch">Get in touch with us</a>
+            <div id="company-about">
+            <section class="bak">
+            <img src="img/ressurser/bakgrunnsbilde2.jpg" alt="Bilde for bakgrunn av about us seksjon">
+            </section>
+            <section id="companyboks">
+                <h2>About our company</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a href="Intouch">Get in touch with us</a>
+            </section>
             </div>
             <section id="our-services">
                 <h2>Our Services</h2>
@@ -67,9 +70,10 @@
                 <img src="img/ressurser/logo2.png" alt="Clients logo nummer 2">
                 <img src="img/ressurser/logo3.png" alt="Clients logo nummer 3">
             </section>
+            <section id="contact-overskrift">
+            <h2>Contact us</h2>
+            </section>
             <section id="Contact">
-                <h2>Contact us</h2>
-                <div class="form">
                 <article>
                 <h3>Send us a message</h3>
                 <form action="/action_page.php">
@@ -82,20 +86,19 @@
                         <input type="text" id="subject" name="subject" value="Branding..."><br><br>
                     </section>
                     <section>
-                        <label for="message">Message</label>
-                        <input type="text" id="message" name="message">
-                        <input type="submit" value="Send message">
+                        <label for="message">Message</label><br>
+                        <input type="text" id="message" name="message" style="padding: 40px;"><br>
+                        <input type="submit" value="Send message" style="background-color: #e6bd43; border-color: #e6bd43; font-weight: bold; margin-top: 20px;">
                     </section>
                 </form> 
                 </article>
-            </div>
-            <div class="formInfo">
+            <div class="forminfo">
                 <article>
                 <h3>Contact information</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <i class="fa-solid fa-location-pin">B R A Veien 4, 1757 Halden</i>
-                <i class="fa-solid fa-phone">69 60 80 00</i>
-                <i class="fa-solid fa-envelope"></i><a href="e-mail">postmottak@hiof.no</a>
+                <i class="fa-solid fa-location-pin">  B R A Veien 4, 1757 Halden</i>
+                <i class="fa-solid fa-phone">  69 60 80 00</i>
+                <i class="fa-solid fa-envelope">  postmottak@hiof.no</i>
                 </article>
             </div>
             </section>
@@ -107,9 +110,11 @@
             <section class="some">
                 <a href="index.html"><img src="img/ressurser/logo1.png" alt="logobilde på footermeny"></a>
                 <p>Company copyright 2023</p>
+                <section>
                     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </section>
             </section>
         </footer>
         </div>

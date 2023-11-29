@@ -1,0 +1,649 @@
+/* Felles for alle sidene */
+
+    /* tatt fra arbeidet gjort i forelesning */
+* {
+     box-sizing: border-box;
+    }
+
+html {
+    font-size: calc(1em + 1vw);
+}
+
+
+body{
+    font-family: 'Kanit', sans-serif;
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+/* Meny start */
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul{
+    list-style: none;
+    position: relative;
+    align-self: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li{
+    margin: 10px 0;
+}
+
+header nav a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+header img{
+    width: 100px;
+    margin: 20px;
+    
+}
+
+.javanav{
+    color: #000;
+    font-weight: bold;
+    background-color: #e6bd43;
+    border-radius: -0.5rem;
+    border-color: #e6bd43;
+
+}
+/* Meny slutt */
+
+/* Footer meny start */
+footer{
+    background-color: #252525;
+    grid-area: footer;
+}
+
+.some{
+    font-family: 'Kanit', sans-serif;
+    background-color: #252525;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.some img {
+    width: 100px;
+
+}
+
+.some p{
+    color: #fff;
+    text-align: center;
+    justify-self: center;
+    margin: 10px;
+
+}
+
+.some a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    font-size: 25px;
+}
+
+/* Footer meny slutt */
+
+/* Index */
+
+.headline{
+    background-color: rgb(212, 209, 205);
+    padding-bottom: 20px;
+    margin: 1rem;
+}
+
+.headline h1{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.headline p{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 60rem;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.headline a{
+    text-align: center;
+    background: #e6bd43;  
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    width: 250px;
+    font-weight: bold;
+    justify-self: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.engaging h2{
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.engaging p{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 60rem;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#about-company img{
+    width: 300px;
+    display: block; 
+    margin: 0 auto; 
+    padding-top: 20px;
+}
+
+#about-company{
+    text-align: center; 
+    background-color: #e6bd43;
+    margin: 20px;
+}
+
+#about-company a{
+    display: inline-block; 
+    border-style: solid;
+    color: #000;
+    text-decoration: none;
+    width: 250px;
+    font-weight: bold;
+    margin: 10px auto; 
+    padding: 10px;
+}
+
+#companyboks{
+    text-align: center;
+    margin: 10px;
+    border-style: solid;
+    padding: 20px;
+    font-size: medium;
+}
+
+#companyboks a{
+    text-align: center;
+    background: #e6bd43;  
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    width: 250px;
+    font-weight: bold;
+    justify-self: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+
+}
+
+#serviceH2{
+    text-align: center;
+
+}
+
+#services h3{
+    text-align: center;
+}
+
+#services  p {
+    text-align: center;
+    
+}
+
+.sign-up{
+    background-color: rgb(212, 209, 205);
+}
+
+.sign-up form{
+    text-align: center;
+    padding: 20px;
+}
+
+.sign-up h3{
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Portfolio */
+
+.bakgrunn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 400px; 
+    background-image: url('sti/til/bakgrunnsbilde.jpg'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+.bakgrunn img {
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 20px;
+}
+
+.bakgrunn h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(231, 220, 220, 0.5);
+}
+
+.previous{
+    text-align: left;
+}
+
+.previous h2{
+    margin: 10px;
+    padding: 20px;
+    border-bottom: #e6bd43;
+}
+
+.previous li{
+    list-style: none;
+    margin: 15px;
+    padding: 8px;
+    display: inline-block; 
+    text-align: left;
+}
+
+.previous a{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    border-style: outset;
+    border-color: #000;
+    padding: 5px;
+
+}
+
+#brandingH2{
+    padding: 10px;
+    margin: 20px;
+}
+
+#branding {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+#branding-bilder img {
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    margin: 20px;
+}
+
+#branding-bilder p {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#branding-ekstra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#branding-ekstra img {
+    width: 350px;
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+#branding-ekstra p {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#designH2{
+    padding: 20px;
+    margin: 20px;
+}
+
+#design{
+    text-align: center;
+}
+
+#design img{
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+}
+
+#design p{
+    justify-self: center;
+    text-align: center;
+}
+
+#developmentH2{
+    padding: 20px;
+    margin: 20px;
+    border-bottom-color: #e6bd43;
+    border-style: solid;
+    border-bottom: #e6bd43;
+    border-bottom-style: solid;
+}
+
+#development img{
+    padding: 20px;
+    margin: 20px;
+    width: 350px;
+}
+
+#development p{
+    justify-self: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* About */
+
+.bak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 400px; 
+    background-image: url('sti/til/bakgrunnsbilde.jpg'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+.bak img {
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 20px;
+}
+
+#companyboks{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(78, 77, 77, 0.5);
+}
+
+#our-services{
+    text-align: center;
+    font-size: large;
+}
+
+
+#branding-bilder {
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#branding article {
+    /* chat gpt */
+    flex: 1;  
+    margin: 20px;
+    text-align: center;
+}
+
+#branding i {
+    font-size: 25px;
+    margin-bottom: 10px; 
+}
+
+#branding p {
+    text-align: center;
+}
+
+#branding{
+    font-size: medium;
+    display: flex;
+    
+}
+
+.clients{
+    align-items: center;
+    text-align: center;
+    background-color: #e6bd43;
+    padding: 20px;
+}
+
+#contact-overskrift{
+    justify-self: center;
+    text-align: center;
+}
+
+#Contact{
+    margin: 20px;
+    padding: 10px;
+}
+
+#forminfo p{
+    text-align: center;
+}
+
+.forminfo i{
+    font-size: small;
+    padding: 10px;
+    display: block;
+}
+
+
+
+iframe{
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header nav ul{
+        list-style: none;
+        justify-self: space-between;
+        display: flex;
+        float: right;
+        display: flex;
+        gap: 20px; 
+        padding-left: 60%; 
+        font-size: 25px;
+    }
+
+
+    header img{
+        width: 75px;
+        margin: 1rem;
+        
+    }
+
+    .headline{
+        font-size: large;
+    }
+
+    .engaging{
+        font-size: large;
+    }
+
+    #about-company {
+        display: flex;
+        align-items: center;
+        font-size: large;
+        margin: 50px;
+        text-align: left;
+    }
+    
+    #about-company img {
+        margin: 30px;
+    }
+    
+    #about-company a{
+        text-align: center;
+    }
+
+    #services{
+        display: flex;
+    }
+
+    /* Portfolio */
+
+    .bakgrunn img {
+        width: 1200px;
+        height: 400px;
+        display: block;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .bakgrunn h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, -50%);
+        text-shadow: 2px 2px 4px rgba(231, 220, 220, 0.5);
+    }
+
+    #branding{
+        display: flex;
+    
+    }
+
+    .previous a{
+        font-size: large;
+    }
+
+    #branding-bilder{
+        display: flex;
+    }
+
+    #branding-ekstra{
+        margin-left: -900px;
+    }
+
+    #design{
+        display: flex;
+    }
+
+    #development{
+        display: flex;
+    }
+
+    /* About */
+    .bak img {
+        width: 1200px;
+        height: 400px;
+        display: block;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #companyboks{
+        position: absolute;
+        width: 400px;
+        height: 300px;
+        top: 370px;
+        left: 40%;
+        transform: translate(50%, -50%);
+        background-color: rgba(78, 77, 77, 0.5);
+    }
+
+    #branding {
+        font-size: medium;
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around; 
+        align-items: center;
+    }
+
+    #Contact {
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start; 
+        margin: 20px;
+        padding: 10px;
+        float: right;
+    }
+    
+    #Contact h3{
+        text-align: left;
+        margin: 20px;
+    }
+    
+    #Contact form,
+    #Contact .forminfo {
+        flex: 1;
+        margin: 0 20px;
+        font-size: 25px;
+    }
+
+
+    .forminfo {
+        margin: 20px;
+        font-size: small;
+        padding: 20px;
+        display: block;
+    }
+
+    .forminfo h3{
+        margin: 40px;
+    }
+
+
+
+
+}
